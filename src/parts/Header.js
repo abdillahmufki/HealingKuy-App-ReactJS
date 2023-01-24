@@ -4,8 +4,9 @@ import BrandIcon from "parts/IconText";
 
 export default function Header(props) {
   const getNavLinkClass = (path) => {
-    return props.locaiton.pathname === path ? " active" : "";
+    return props.location.pathname === path ? " active" : "";
   };
+
   return (
     <header className="spacing-sm">
       <div className="container">
@@ -20,7 +21,7 @@ export default function Header(props) {
               </li>
               <li className={`nav-item${getNavLinkClass("/browse-by")}`}>
                 <Button className="nav-link" type="link" href="/browse-by">
-                  Browse by
+                  Browse By
                 </Button>
               </li>
               <li className={`nav-item${getNavLinkClass("/stories")}`}>

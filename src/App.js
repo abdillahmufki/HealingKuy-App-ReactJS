@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" component={LandingPage}></Route>
+        <Route path="/" component={LandingPage} />
       </Router>
     </div>
   );
